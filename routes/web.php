@@ -24,7 +24,6 @@ use App\Http\Livewire\Users;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Auth::routes(['register' => false]);
 Route::middleware(['auth'])->group(function () {
     Route::group(['middleware' => ['role:Administrador|Cajero']], function () {
@@ -54,6 +53,7 @@ Route::middleware(['auth'])->group(function () {
 
 
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     //Reportes PDF
     Route::get('report/pdf/{user}/{type}/{f1}/{f2}', [ExportController::class, 'reportePDF']);
