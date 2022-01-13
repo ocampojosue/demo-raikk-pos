@@ -15,54 +15,44 @@ class DenominationSeeder extends Seeder
     public function run()
     {
         Denomination::create([
-            'type'=> 'BILLETE',
-            'value'=> '200',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'billete',
+            'value' => '200'
         ]);
         Denomination::create([
-            'type'=> 'BILLETE',
-            'value'=> '100',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'billete',
+            'value' => '100'
         ]);
         Denomination::create([
-            'type'=> 'BILLETE',
-            'value'=> '50',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'billete',
+            'value' => '50'
         ]);
         Denomination::create([
-            'type'=> 'BILLETE',
-            'value'=> '20',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'billete',
+            'value' => '20'
         ]);
         Denomination::create([
-            'type'=> 'BILLETE',
-            'value'=> '10',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'billete',
+            'value' => '10'
         ]);
         Denomination::create([
-            'type'=> 'MONEDA',
-            'value'=> '5',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'moneda',
+            'value' => '5'
         ]);
         Denomination::create([
-            'type'=> 'MONEDA',
-            'value'=> '2',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'moneda',
+            'value' => '2'
         ]);
         Denomination::create([
-            'type'=> 'MONEDA',
-            'value'=> '1',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'moneda',
+            'value' => '1'
         ]);
         Denomination::create([
-            'type'=> 'MONEDA',
-            'value'=> '0.5',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'moneda',
+            'value' => '0.5'
         ]);
         Denomination::create([
-            'type'=> 'OTRO',
-            'value'=> '0',
-            'image'=> 'https://dummyimage.com/200x150/5c5756/fff'
+            'type' => 'otro',
+            'value' => '0'
         ]);
     }
 }

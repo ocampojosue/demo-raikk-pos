@@ -25,7 +25,7 @@ class Products extends Component
 
     public function mount(){
         $this->pageTitle = 'LISTADO';
-        $this->componentName = 'PRODUCTOS';
+        $this->componentName = 'Productos';
         $this->categoryid = 'Elegir';
     }
 

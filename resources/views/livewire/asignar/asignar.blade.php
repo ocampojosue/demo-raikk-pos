@@ -13,7 +13,7 @@
                 <div class="form-inline">
                     @can('asign_select_rol')
                         <div class="form-group mr-5">
-                            <select wire:model="role" class="form-control">
+                            <select wire:model="role" class="form-control text-capitalize">
                                 <option value="Elegir">--Seleccione una Rol--</option>
                                 @foreach ($roles as $role)
                                 <option value="{{$role->id}}">{{$role->name}}</option>
@@ -57,10 +57,10 @@
                                                             id="p{{$permiso->id}}"
                                                             value="{{$permiso->id}}"
                                                             class="new-control-input"
-                                                            {{$permiso->checked == 1 ? 'checked' : ''}} class="new-control-input">
+                                                            {{$permiso->checked == 1 ? 'checked' : ''}}>
                                                         @endcan
                                                         <span class="new-control-indicator"></span>
-                                                        <h6>{{$permiso->name}}</h6>
+                                                        <h6 class="text-capitalize">{{$permiso->description}}</h6>
                                                     </label>
                                                 </div>
                                                 {{-- <div class="n-chk">

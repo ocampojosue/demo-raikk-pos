@@ -14,7 +14,7 @@ class Categories extends Component
     private $pagination = 5;
     public function mount(){
         $this->pageTitle = 'LISTADO';
-        $this->componentName = 'CATEGORÍAS';
+        $this->componentName = 'Categorías';
     }
     public function paginationView()
     {

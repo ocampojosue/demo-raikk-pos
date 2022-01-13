@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="widget widget-chart-one">
             <div class="widget-heading">
-                <h4 class="card-title">
+                <h4 class="card-title text-uppercase">
                     <b>{{$componentName}} | {{$pageTitle}}</b>
                 </h4>
                 <ul class="tabs tab-pills">
@@ -35,7 +35,7 @@
                                 @foreach ($coins as $coin)
                                     <tr>
                                         <td><h6>{{$coin->id}}</h6></td>
-                                        <td class="text-center"><h6>{{$coin->type}}</h6></td>
+                                        <td class="text-center text-capitalize"><h6>{{$coin->type}}</h6></td>
                                         <td class="text-center"><h6>Bs. {{number_format($coin->value,2)}}</h6></td>
                                         <td class="text-center">
                                             <span>

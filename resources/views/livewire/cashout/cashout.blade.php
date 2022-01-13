@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="widget">
             <div class="widget-heading">
-                <h4 class="card-title text-center">
+                <h4 class="card-title text-center text-uppercase">
                     <b>Corte de Caja</b>
                 </h4>
             </div>
@@ -12,7 +12,7 @@
                         <div class="col-sm-12 col-md-3">
                             <div class="form-group">
                                 <label>Usuario</label>
-                                <select wire:model="userid" class="form-control">
+                                <select wire:model="userid" class="form-control text-capitalize">
                                     <option value="0" disabled>--Elegir--</option>
                                     @foreach ($users as $user)
                                         <option value="{{$user->id}}">{{$user->name}}</option>
@@ -82,7 +82,7 @@
                                         <td class="text-center">{{$sale->id}}</td>
                                         <td class="text-center"><h6>Bs. {{number_format($sale->total,2)}}</h6></td>
                                         <td class="text-center"><h6>{{$sale->items}}</h6></td>
-                                        <td class="text-center"><h6>{{$sale->created_at}}</h6></td>
+                                        <td class="text-center"><h6>{{\Carbon\Carbon::parse($sale->created_at)->format('d-m-Y H:i:s')}}</h6></td>
                                         <td class="text-center">
                                             <button wire:click.prevent="viewDetails({{$sale}})" class="btn btn-dark btn-raikk btn-sm">
                                                 <i class="fas fa-list"></i>

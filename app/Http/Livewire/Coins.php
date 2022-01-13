@@ -16,7 +16,7 @@ class Coins extends Component
     private $pagination = 5;
     public function mount(){
         $this->pageTitle = 'LISTADO';
-        $this->componentName = 'DENOMINACIONES';
+        $this->componentName = 'Denominaciones';
         $this->type = 'Elegir';
     }
     public function paginationView()

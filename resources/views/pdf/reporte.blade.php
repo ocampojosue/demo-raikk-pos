@@ -33,7 +33,7 @@
                         <span style="font-size: 16px"><strong>Fecha de Consulta {{\Carbon\Carbon::now()->format('d-m-Y')}}</strong></span>
                     @endif
                     <br>
-                    <span style="font-size: 14px">Usuario: {{$user}}</span>
+                    <span style="font-size: 14px;text-transform: capitalize;">Usuario: {{$user}}</span>
                 </td>
             </tr>
         </table>
@@ -58,7 +58,7 @@
                         <td align="center">{{number_format($item->total,2)}}</td>
                         <td align="center">{{$item->items}}</td>
                         <td align="center">{{$item->status}}</td>
-                        <td align="center">{{$item->user}}</td>
+                        <td align="center" style="text-transform: capitalize">{{$item->user}}</td>
                         <td align="center">{{$item->created_at}}</td>
                     </tr>
                 @endforeach

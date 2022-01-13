@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="widget widget-chart-one">
             <div class="widget-heading">
-                <h4 class="card-title">
+                <h4 class="card-title text-uppercase">
                     <b>{{$componentName}} | {{$pageTitle}}</b>
                 </h4>
                 <ul class="tabs tab-pills">
@@ -23,14 +23,13 @@
                     <table class="table table-bordered table-stripped mt-1">
                         <thead class="text-white thead-raikk">
                             <tr>
-                                <th class="table-th text-white">ID</th>
+                                <th class="table-th text-white">CÓDIGO</th>
                                 <th class="table-th text-white text-center">DESCRIPCION</th>
-                                <th class="table-th text-white text-center">CODIGO</th>
+                                <th class="table-th text-white text-center">BARRAS</th>
                                 <th class="table-th text-white text-center">CATEGORIA</th>
                                 <th class="table-th text-white text-center">PRECIO</th>
                                 {{-- <th class="table-th text-white text-center">COSTO</th> --}}
                                 <th class="table-th text-white text-center">STOCK</th>
-                                <th class="table-th text-white text-center">INV. MIN.</th>
                                 <th class="table-th text-white text-center">IMAGE</th>
                                 <th class="table-th text-white text-center">ACTIONS</th>
                             </tr>
@@ -40,13 +39,12 @@
                                 @foreach ($products as $product)
                                     <tr>
                                         <td><h6 class="text-left">{{$product->id}}</h6></td>
-                                        <td><h6 class="text-center">{{$product->name}}</h6></td>
+                                        <td><h6 class="text-center text-capitalize">{{$product->name}}</h6></td>
                                         <td><h6 class="text-center">{{$product->barcode}}</h6></td>
-                                        <td><h6 class="text-center">{{$product->category}}</h6></td>
+                                        <td><h6 class="text-center text-capitalize">{{$product->category}}</h6></td>
                                         <td><h6 class="text-center">{{$product->price}}</h6></td>
                                         {{-- <td><h6 class="text-center">{{$product->cost}}</h6></td> --}}
                                         <td><h6 class="text-center">{{$product->stock}}</h6></td>
-                                        <td><h6 class="text-center">{{$product->alerts}}</h6></td>
                                         <td class="text-center">
                                             <span>
                                                 <img src="{{asset('storage/products/'.$product->imagen)}}" alt="imagen de ejemplo" height="70" width="80" class="rounded">

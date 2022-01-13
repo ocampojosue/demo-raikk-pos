@@ -16,250 +16,250 @@ class PermissionSeeder extends Seeder
     public function run()
     {
         $role1 = Role::create([
-            'name' => 'Administrador',
+            'name' => 'administrador',
             'guard_name' => 'web'
         ]);
         $role2 = Role::create([
-            'name' => 'Cajero',
+            'name' => 'cajero',
             'guard_name' => 'web'
         ]);
 
         $role3 = Role::create([
-            'name' => 'Supervisor',
+            'name' => 'supervisor',
             'guard_name' => 'web'
         ]);
 
         Permission::create([
             'name' => 'category_index',
-            'description' => 'Ver lista de Categorías',
+            'description' => 'ver lista de categorías',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'category_search',
-            'description' => 'Buscar Categoría',
+            'description' => 'buscar categoría',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1,$role2, $role3]);
         Permission::create([
             'name' => 'category_destroy',
-            'description' => 'Eliminar Categoría',
+            'description' => 'eliminar categoría',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'category_update',
-            'description' => 'Editar Categoría',
+            'description' => 'editar categoría',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'category_create',
-            'description' => 'Crear Categoría',
+            'description' => 'crear categoría',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'product_index',
-            'description' => 'Ver lista de Productos',
+            'description' => 'ver lista de productos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'product_search',
-            'description' => 'Buscar Productos',
+            'description' => 'buscar productos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'product_destroy',
-            'description' => 'Eliminar Productos',
+            'description' => 'eliminar productos',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'product_update',
-            'description' => 'Editar Productos',
+            'description' => 'editar productos',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'product_create',
-            'description' => 'Crear Productos',
+            'description' => 'crear productos',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'sale_index',
-            'description' => 'Ver Componente de Ventas',
+            'description' => 'ver componente de ventas',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'role_index',
-            'description' => 'Ver lista de Roles',
+            'description' => 'ver lista de roles',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'role_search',
-            'description' => 'Buscar Roles',
+            'description' => 'buscar roles',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'role_destroy',
-            'description' => 'Eliminar Roles',
+            'description' => 'eliminar roles',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'role_update',
-            'description' => 'Editar Roles',
+            'description' => 'editar roles',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'role_create',
-            'description' => 'Crear Roles',
+            'description' => 'crear roles',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'permission_index',
-            'description' => 'Ver lista de Permisos',
+            'description' => 'ver lista de permisos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'permission_search',
-            'description' => 'Buscar Permisos',
+            'description' => 'buscar permisos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'permission_destroy',
-            'description' => 'Eliminar Permisos',
+            'description' => 'eliminar permisos',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'permission_update',
-            'description' => 'Editar Permisos',
+            'description' => 'editar permisos',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'permission_create',
-            'description' => 'Crear Permisos',
+            'description' => 'crear permisos',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'asign_index',
-            'description' => 'Ver lista de Asignaciones',
+            'description' => 'ver lista de asignaciones',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'asign_search',
-            'description' => 'Buscar Asignaciones',
+            'description' => 'buscar asignaciones',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'asign_select_rol',
-            'description' => 'Ver Roles Disponibles',
+            'description' => 'ver roles disponibles',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'asign_role',
-            'description' => 'Asignar Roles Checkbox',
+            'description' => 'asignar roles checkbox',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'asign_sync_all',
-            'description' => 'Sincronizar Todos',
+            'description' => 'sincronizar todos',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'asign_revoke_all',
-            'description' => 'Revocar Todos',
+            'description' => 'revocar todos',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'user_index',
-            'description' => 'Ver lista de Usuarios',
+            'description' => 'ver lista de usuarios',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'user_search',
-            'description' => 'Buscar Usuarios',
+            'description' => 'buscar usuarios',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'user_destroy',
-            'description' => 'Eliminar Usuarios',
+            'description' => 'eliminar usuarios',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'user_update',
-            'description' => 'Editar Usuarios',
+            'description' => 'editar usuarios',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'user_create',
-            'description' => 'Crear Usuarios',
+            'description' => 'crear usuarios',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'coin_index',
-            'description' => 'Ver lista de Monedas',
+            'description' => 'ver lista de monedas',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'coin_search',
-            'description' => 'Buscar Monedas',
+            'description' => 'buscar monedas',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'coin_destroy',
-            'description' => 'Eliminar Monedas',
+            'description' => 'eliminar monedas',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'coin_update',
-            'description' => 'Editar Monedas',
+            'description' => 'editar monedas',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'coin_create',
-            'description' => 'Crear Monedas',
+            'description' => 'crear monedas',
             'guard_name' => 'web'
         ])->syncRoles([$role1, $role2]);
 
 
         Permission::create([
             'name' => 'arqueo_index',
-            'description' => 'Ver lista de Arqueos',
+            'description' => 'ver lista de arqueos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'arqueo_consult',
-            'description' => 'Consultar Arqueos',
+            'description' => 'Consultar arqueos',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
 
 
         Permission::create([
             'name' => 'report_index',
-            'description' => 'Ver lista de Reportes',
+            'description' => 'ver lista de reportes',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'report_details',
-            'description' => 'Ver Detalle de Reportes',
+            'description' => 'ver detalle de reportes',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'report_pdf',
-            'description' => 'Exportar Reporte PDF',
+            'description' => 'exportar reporte pdf',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
         Permission::create([
             'name' => 'report_excel',
-            'description' => 'Exportar Reporte Excel',
+            'description' => 'exportar reporte excel',
             'guard_name' => 'web'
         ])->syncRoles([$role1]);
     }

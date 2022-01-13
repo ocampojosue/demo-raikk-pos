@@ -14,7 +14,7 @@ use Livewire\Component;
 
 class Pos extends Component
 {
-    public $total, $itemsQuantity, $efectivo, $change, $search;
+    public $total, $itemsQuantity, $efectivo, $change, $search, $componentName;
 
     public function mount()
     {
@@ -22,6 +22,7 @@ class Pos extends Component
         $this->change = 0;
         $this->total = Cart::getTotal();
         $this->itemsQuantity = Cart::getTotalQuantity();
+        $this->componentName = 'Productos';
     }
     public function render()
     {

@@ -5,6 +5,6 @@
                 <i class="fas fa-search"></i>
             </span>
         </div>
-        <input type="text" wire:model="search" placeholder="@if(request()->routeIs('pos')) Buscar por Nombre @else Buscar ... @endif" class="form-control">
+        <input type="text" wire:model="search" placeholder="@if(request()->routeIs('pos')) Buscar por Nombre de {{$componentName}} @else Buscar {{$componentName}} @endif" class="form-control">
     </div>
 </div>

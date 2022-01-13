@@ -26,7 +26,7 @@ use App\Http\Livewire\Users;
 */
 Auth::routes(['register' => false]);
 Route::middleware(['auth'])->group(function () {
-    Route::group(['middleware' => ['role:Administrador|Cajero']], function () {
+    Route::group(['middleware' => ['role:administrador|cajero']], function () {
         Route::get('categories', Categories::class)->name('categories');
         Route::get('products', Products::class)->name('products');
         Route::get('coins', Coins::class)->name('coins');
@@ -40,7 +40,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('cashout', Cashout::class)->name('cashout');
         Route::get('reports', Report::class)->name('reports');
     });
-    Route::group(['middleware' => ['role:Administrador|Cajero|Supervisor']], function () {
+    Route::group(['middleware' => ['role:administrador|cajero|supervisor']], function () {
         Route::get('categories', Categories::class)->name('categories');
         Route::get('products', Products::class)->name('products');
         Route::get('coins', Coins::class)->name('coins');

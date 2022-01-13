@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="widget">
             <div class="widget-heading">
-                <h4 class="card-title text-center">
+                <h4 class="card-title text-center text-uppercase">
                     <b>{{$componentName}}</b>
                 </h4>
             </div>
@@ -13,7 +13,7 @@
                             <div class="col-sm-12">
                                 <h6>Elige el Usuario</h6>
                                 <div class="form-group">
-                                    <select wire:model="userId" class="form-control">
+                                    <select wire:model="userId" class="form-control text-capitalize">
                                         <option value="0">Todos</option>
                                         @foreach ($users as $user)
                                             <option value="{{$user->id}}">{{$user->name}}</option>
@@ -81,10 +81,10 @@
                                             <td class="text-center"><h6>Bs. {{number_format ($d->total,2)}}</h6></td>
                                             <td class="text-center"><h6>{{$d->items}}</h6></td>
                                             <td class="text-center"><h6>{{$d->status}}</h6></td>
-                                            <td class="text-center"><h6>{{$d->user}}</h6></td>
+                                            <td class="text-center text-capitalize"><h6>{{$d->user}}</h6></td>
                                             <td class="text-center">
                                                 <h6>
-                                                    {{\Carbon\Carbon::parse($d->created_at)->format('d-m-Y')}}
+                                                    {{\Carbon\Carbon::parse($d->created_at)->format('d-m-Y H:i:s')}}
                                                 </h6>
                                             </td>
                                             <td class="text-center" width="50px">

@@ -14,20 +14,16 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create([
-            'name' => 'CURSOS',
-            'image' => 'https://dummyimage.com/200x150/5c5756/fff',
+            'name' => 'cursos',
         ]);
         Category::create([
-            'name' => 'TENNIS',
-            'image' => 'https://dummyimage.com/200x150/5c5756/fff',
+            'name' => 'tennis',
         ]);
         Category::create([
-            'name' => 'CELULARES',
-            'image' => 'https://dummyimage.com/200x150/5c5756/fff',
+            'name' => 'celulares',
         ]);
         Category::create([
-            'name' => 'COMPUTADORAS',
-            'image' => 'https://dummyimage.com/200x150/5c5756/fff',
+            'name' => 'computadoras',
         ]);
     }
 }

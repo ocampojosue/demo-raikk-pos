@@ -26,7 +26,7 @@
                                                 <div class="usr-img-frame mr-2 rounded-circle">
                                                     <img alt="avatar" class="img-fluid rounded-circle" src="assets/img/90x90.jpg">
                                                 </div>
-                                                <p class="align-self-center mb-0">{{$product->name}}</p>
+                                                <p class="align-self-center mb-0 text-capitalize">{{$product->name}}</p>
                                             </div>
                                         </td>
                                         <td>{{$product->cost}}</td>
@@ -69,7 +69,7 @@
                                     </span>
                                     @endif
                                 </td>
-                                <td><h6>{{$item->name}}</h6></td>
+                                <td><h6 class="text-capitalize">{{$item->name}}</h6></td>
                                 <td lass="texte-center">Bs. {{number_format($item->price, 2)}}</td>
                                 <td>
                                     <input type="number" id="r{{$item->id}}" 

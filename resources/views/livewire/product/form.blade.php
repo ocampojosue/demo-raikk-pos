@@ -57,7 +57,7 @@
     <div class="col-sm-12 col-md-4">
         <div class="form-group">
             <label>Categorías</label>
-            <select wire:model="categoryid" class="form-control">
+            <select wire:model="categoryid" class="form-control  text-capitalize">
                 <option value="Elegir" disabled>Elegir</option>
                 @foreach ($categories as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>

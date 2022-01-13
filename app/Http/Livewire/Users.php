@@ -52,7 +52,7 @@ class Users extends Component
         $this->password = '';
         $this->search = '';
         $this->status = 'Elegir';
-        // $this->profile = 'Elegir';
+        $this->profile = 'Elegir';
         $this->selected_id = 0;
         $this->resetValidation();
         $this->resetPage();

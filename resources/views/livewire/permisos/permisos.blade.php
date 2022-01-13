@@ -2,10 +2,10 @@
     <div class="col-sm-12">
         <div class="widget widget-chart-one">
             <div class="widget-heading">
-                <h4 class="card-title">
+                <h4 class="card-title text-uppercase">
                     <b>{{$componentName}} | {{$pageTitle}}</b>
                 </h4>
-                <ul class="tabs tab-pills">
+                {{-- <ul class="tabs tab-pills">
                     @can('permission_create')
                     <li>
                         <a href="javascript:void(0)" class="tabmenu btn-raikk" data-toggle="modal" data-target="#theModal">
@@ -13,7 +13,7 @@
                         </a>
                     </li>
                     @endcan
-                </ul>
+                </ul> --}}
             </div>
             @can('permission_search')
                 @include('common.searchbox')
@@ -26,7 +26,7 @@
                                 <th class="table-th text-white">ID</th>
                                 <th class="table-th text-white text-center">SLUG</th>
                                 <th class="table-th text-white text-center">DESCRIPCIÓN</th>
-                                <th class="table-th text-white text-center">ACTIONS</th>
+                                {{-- <th class="table-th text-white text-center">ACTIONS</th> --}}
                             </tr>
                         </thead>
                         @if ($permissions->count())
@@ -39,10 +39,10 @@
                                         <td class="text-center">
                                             <h6>{{$permission->name}}</h6>
                                         </td>
-                                        <td class="text-center">
+                                        <td class="text-center text-capitalize">
                                             <h6>{{$permission->description}}</h6>
                                         </td>
-                                        <td class="text-center">
+                                        {{-- <td class="text-center">
                                             @can('permission_update')
                                                 <a href="javascript:void(0)"
                                                 wire:click="Edit({{$permission->id}})"
@@ -57,9 +57,7 @@
                                                 <i class="fas fa-trash"></i>
                                             </a>
                                             @endcan
-                                            
-                                            
-                                        </td>
+                                        </td> --}}
                                     </tr>
                                 </tbody>
                             @endforeach

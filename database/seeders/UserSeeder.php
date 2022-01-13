@@ -15,28 +15,28 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Josue Ocampo',
+            'name' => 'josue ocampo',
             'phone' => '67690586',
             'email' => 'admin@admin.com',
-            'profile' =>'ADMINISTRADOR',
+            'profile' => 'administrador',
             'status' => 'Active',
             'password' => bcrypt('admin')
-        ])->assignRole('Administrador');
+        ])->assignRole('administrador');
         User::create([
-            'name' => 'Alex OCampo',
+            'name' => 'alex ocampo',
             'phone' => '12345678',
             'email' => 'cajero@cajero.com',
-            'profile' =>'CAJERO',
+            'profile' => 'cajero',
             'status' => 'Active',
             'password' => bcrypt('cajero')
-        ])->assignRole('Cajero');
+        ])->assignRole('cajero');
         User::create([
-            'name' => 'Alex OCampo',
+            'name' => 'josé ocampo',
             'phone' => '12345678',
             'email' => 'supervisor@supervisor.com',
-            'profile' => 'SUPERVISOR',
+            'profile' => 'supervisor',
             'status' => 'Active',
             'password' => bcrypt('supervisor')
-        ])->assignRole('Supervisor');
+        ])->assignRole('supervisor');
     }
 }

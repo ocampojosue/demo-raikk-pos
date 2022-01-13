@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="widget widget-chart-one">
             <div class="widget-heading">
-                <h4 class="card-title">
+                <h4 class="card-title text-uppercase">
                     <b>{{$componentName}} | {{$pageTitle}}</b>
                 </h4>
                 <ul class="tabs tab-pills">
@@ -23,10 +23,10 @@
                     <table class="table table-bordered table-stripped mt-1">
                         <thead class="text-white thead-raikk">
                             <tr>
-                                <th class="table-th text-white">ID</th>
-                                <th class="table-th text-white text-center">DESCRIPTION</th>
-                                <th class="table-th text-white text-center">IMAGE</th>
-                                <th class="table-th text-white text-center">ACTIONS</th>
+                                <th class="table-th text-white">CÓDIGO</th>
+                                <th class="table-th text-white text-center">DESCRIPCIÓN</th>
+                                <th class="table-th text-white text-center">IMAGEN</th>
+                                <th class="table-th text-white text-center">ACCIONES</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -34,7 +34,7 @@
                                 @foreach ($categories as $category)
                                     <tr>
                                         <td><h6>{{$category->id}}</h6></td>
-                                        <td class="text-center"><h6>{{$category->name}}</h6></td>
+                                        <td class="text-center text-capitalize"><h6>{{$category->name}}</h6></td>
                                         <td class="text-center">
                                             <span>
                                                 <img src="{{asset('storage/categories/'.$category->imagen)}}" alt="imagen de ejemplo" height="70" width="80" class="rounded">

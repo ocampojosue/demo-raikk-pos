@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="widget widget-chart-one">
             <div class="widget-heading">
-                <h4 class="card-title">
+                <h4 class="card-title text-uppercase">
                     <b>{{$componentName}} | {{$pageTitle}}</b>
                 </h4>
                 <ul class="tabs tab-pills">
@@ -35,7 +35,7 @@
                                         <td>
                                             <h6>{{$role->id}}</h6>
                                         </td>
-                                        <td class="text-center">
+                                        <td class="text-center text-capitalize">
                                             <h6>{{$role->name}}</h6>
                                         </td>
                                         <td class="text-center">

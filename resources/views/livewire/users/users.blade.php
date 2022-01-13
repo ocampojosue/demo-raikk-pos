@@ -2,7 +2,7 @@
     <div class="col-sm-12">
         <div class="widget widget-chart-one">
             <div class="widget-heading">
-                <h4 class="card-title">
+                <h4 class="card-title text-uppercase">
                     <b>{{$componentName}} | {{$pageTitle}}</b>
                 </h4>
                 <ul class="tabs tab-pills">
@@ -38,7 +38,7 @@
                                 @foreach ($users as $user)
                                     <tr>
                                         <td><h6>{{$user->id}}</h6></td>
-                                        <td><h6>{{$user->name}}</h6></td>
+                                        <td><h6 class="text-capitalize">{{$user->name}}</h6></td>
                                         <td><h6>{{$user->phone}}</h6></td>
                                         <td><h6>{{$user->email}}</h6></td>
                                         <td class="text-uppercase"><h6>{{$user->profile}}</h6></td>
