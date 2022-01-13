@@ -45,6 +45,8 @@ Route::middleware(['auth'])->group(function () {
         Route::get('products', Products::class)->name('products');
         Route::get('coins', Coins::class)->name('coins');
         Route::get('users', Users::class)->name('users');
+        Route::get('cashout', Cashout::class)->name('cashout');
+        Route::get('reports', Report::class)->name('reports');
     });
 
     // Route::get('/', function () {

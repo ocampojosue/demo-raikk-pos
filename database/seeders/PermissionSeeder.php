@@ -38,7 +38,7 @@ class PermissionSeeder extends Seeder
             'name' => 'category_search',
             'description' => 'buscar categoría',
             'guard_name' => 'web'
-        ])->syncRoles([$role1,$role2, $role3]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'category_destroy',
             'description' => 'eliminar categoría',
@@ -148,7 +148,7 @@ class PermissionSeeder extends Seeder
             'name' => 'asign_index',
             'description' => 'ver lista de asignaciones',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2, $role3]);
+        ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'asign_search',
             'description' => 'buscar asignaciones',
@@ -234,7 +234,7 @@ class PermissionSeeder extends Seeder
             'name' => 'arqueo_index',
             'description' => 'ver lista de arqueos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2, $role3]);
+        ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'arqueo_consult',
             'description' => 'Consultar arqueos',
@@ -246,12 +246,12 @@ class PermissionSeeder extends Seeder
             'name' => 'report_index',
             'description' => 'ver lista de reportes',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2, $role3]);
+        ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'report_details',
             'description' => 'ver detalle de reportes',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2, $role3]);
+        ])->syncRoles([$role1, $role2]);
         Permission::create([
             'name' => 'report_pdf',
             'description' => 'exportar reporte pdf',
