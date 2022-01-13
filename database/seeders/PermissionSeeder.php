@@ -234,33 +234,33 @@ class PermissionSeeder extends Seeder
             'name' => 'arqueo_index',
             'description' => 'ver lista de arqueos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role3]);
         Permission::create([
             'name' => 'arqueo_consult',
             'description' => 'Consultar arqueos',
             'guard_name' => 'web'
-        ])->syncRoles([$role1]);
+        ])->syncRoles([$role1, $role3]);
 
 
         Permission::create([
             'name' => 'report_index',
             'description' => 'ver lista de reportes',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'report_details',
             'description' => 'ver detalle de reportes',
             'guard_name' => 'web'
-        ])->syncRoles([$role1, $role2]);
+        ])->syncRoles([$role1, $role2, $role3]);
         Permission::create([
             'name' => 'report_pdf',
             'description' => 'exportar reporte pdf',
             'guard_name' => 'web'
-        ])->syncRoles([$role1]);
+        ])->syncRoles([$role1, $role3]);
         Permission::create([
             'name' => 'report_excel',
             'description' => 'exportar reporte excel',
             'guard_name' => 'web'
-        ])->syncRoles([$role1]);
+        ])->syncRoles([$role1, $role3]);
     }
 }
