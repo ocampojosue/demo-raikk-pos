@@ -9,10 +9,10 @@
         <ul class="navbar-item flex-row search-ul">
         </ul>
         <ul class="navbar-item flex-row navbar-dropdown">
-            <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+            <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1 text-uppercase">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     @auth
-                        <img class="img-raikk"  src="https://ui-avatars.com/api/?background=fff&color=B82627&size=600&name={{Auth::user()->name}}.&bold=true">
+                        <img class="img-raikk" src="https://ui-avatars.com/api/?background=fff&color=B82627&size=600&name={{Auth::user()->name}}.&bold=true">
                     @endauth
                 </a>
                 <div class="dropdown-menu position-absolute animated fadeInUp" aria-labelledby="userProfileDropdown">
